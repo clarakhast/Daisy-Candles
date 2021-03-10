@@ -127,7 +127,7 @@ const App = () => {
 
 
             <footer class="page-footer">
-                <nav>
+                <nav class="footer-nav">
                     <ul>
                         <li class="list-heading">Help & Support</li>
                         <li><a href="#">Terms & Conditions</a></li>
@@ -158,10 +158,10 @@ const App = () => {
                             <p>Sign up for emails to receive newsletters plus exclusive offers and discounts.</p>
                             <input type="email" name="email" id="email" placeholder="Enter your email" class="email" />
                         </li>
-                        <li class="social-icon"><a href="#"><img src="./../img/facebook.png" alt="facebook icon" /></a></li>
-                        <li class="social-icon"><a href="#"><img src="./../img/instagram.png" alt="instagram icon" /></a></li>
-                        <li class="social-icon"><a href="#"><img src="./../img/pinterest.png" alt="pinterest icon" /></a></li>
-                        <li class="social-icon"><a href="#"><img src="./../img/twitter.png" alt="twitter icon" /></a></li>
+                        <li class="social-icon"><a href="#"><img src="./src/img/facebook.png" alt="facebook icon" /></a></li>
+                        <li class="social-icon"><a href="#"><img src="./src/img/instagram.png" alt="instagram icon" /></a></li>
+                        <li class="social-icon"><a href="#"><img src="./src/img/pinterest.png" alt="pinterest icon" /></a></li>
+                        <li class="social-icon"><a href="#"><img src="./src/img/twitter.png" alt="twitter icon" /></a></li>
                     </ul>
                 </nav>
                 <p class="copyright">&copy; Daisy, Crafted with <span class="material-icons">favorite</span> by Clara Khast | All rights reserved.</p>
