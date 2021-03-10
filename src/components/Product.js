@@ -1,7 +1,7 @@
 import React from "react"
 import '../css/App.css'
 import '../css/reset.css'
-import cart from './../img/cart.png'
+import cart from 'img/cart.png'
 
 
 const Product = ({name=0, image=0, brand=0, price=0}) => {

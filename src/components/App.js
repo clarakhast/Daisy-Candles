@@ -2,12 +2,6 @@ import React from 'react'
 import ProductList from 'components/ProductList'
 import '../css/App.css'
 import '../css/reset.css'
-import firewood from './../img/firewood-figs.png'
-import raspberyy from './../img/raspberyy-candle.png'
-import ocean from './../img/ocean-breeze.png'
-import no1 from './../img/no1.png'
-import nudesse from './../img/nudesse.png'
-import pinkMacaron from './../img/pink-macaron.png'
 
 
 const App = () => {
@@ -19,7 +13,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { raspberyy },
+            image: './src/img/raspberyy-candle.png',
             rate: 5
         },
         {
@@ -29,7 +23,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { ocean },
+            image: './src/img/ocean-breeze.png',
             rate: 5
         },
         {
@@ -39,7 +33,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { no1 },
+            image: './src/img/no1.png',
             rate: 5
         },
         {
@@ -49,7 +43,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { nudesse },
+            image: './src/img/nudesse.png',
             rate: 5
         },
         {
@@ -59,7 +53,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { firewood },
+            image: './src/img/firewood-figs.png',
             rate: 5
         },
         {
@@ -69,7 +63,7 @@ const App = () => {
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: { pinkMacaron },
+            image: './src/img/pink-macaron.png',
             rate: 5
         }
 
