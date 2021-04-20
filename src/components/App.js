@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import ProductList from 'components/ProductList'
 import '../css/App.css'
 import '../css/reset.css'
 import AboutUs from 'components/AboutUs'
 import Contact from 'components/Contact'
 import HomePage from 'components/HomePage'
+import ShopProducts from 'components/ShopProducts'
 
 
 const App = () => {
@@ -101,7 +101,7 @@ const App = () => {
                 <Route exact path="/" component={HomePage} />
                 <Route path="/about" component={AboutUs} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/products"><ProductList listProducts={allProducts}/> </Route>
+                <Route path="/products"><ShopProducts products={allProducts}/> </Route>
             </Switch>
 
             <footer class="page-footer">
