@@ -1,11 +1,15 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import ProductList from 'components/ProductList'
 import '../css/App.css'
 import '../css/reset.css'
+import AboutUs from 'components/AboutUs'
+import Contact from 'components/Contact'
+import HomePage from 'components/HomePage'
 
 
 const App = () => {
-     const allProducts = [
+    const allProducts = [
         {
             id: 101,
             name: `Rasberry Candle`,
@@ -70,19 +74,19 @@ const App = () => {
     ]
 
     return (
-        <>
+        <Router>
             <header class="page-header">
-                <a href="index.html" class="logo">Daisy</a>
+                <Link to="/" class="logo">Daisy</Link>
 
                 <button type="button" class="nav-toggle">
                     <span class="material-icons">menu</span>
                 </button>
                 <nav aria-label="Primary" class="navigation">
                     <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#" class="active">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/products" class="active">Products</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
 
@@ -93,38 +97,12 @@ const App = () => {
                 </ul>
             </header>
 
-            <main>
-                <header class="heading">
-                    <h1>Candles that <span>Everyone Loves!</span></h1>
-                    <p>We have a huge collection of candles in our branches.</p>
-                    <p>Our are always the best quality products.</p>
-                    <a href="#" class="intro-btn">Explore Products</a>
-                </header>
-
-                <section id="products">
-                    <h2>Our Products</h2>
-                    <div class="filters">
-                        <div class="sort">
-                            <label for="sort">Sort By</label>
-                            <select name="sort" id="sort">
-                                <option value="price-high">Most Popular</option>
-                                <option value="price-high">Price, highest to lowest</option>
-                                <option value="price-low">Price, lowest to highest</option>
-                                <option value="newest">Newest releases</option>
-                            </select>
-                        </div>
-
-                        <div class="filter-options">
-                            <span class="material-icons">view_module</span>
-                            <span class="material-icons">list</span>
-                            <input type="search" name="find" id="find" placeholder="Search..." class="search" />
-                        </div>
-                    </div>
-                       <ProductList listProducts={allProducts}/>
-                    <div class="more"><a href="#" class="btn-more">Load More</a></div>
-                </section>
-            </main>
-
+            <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route path="/about" component={AboutUs} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/products"><ProductList listProducts={allProducts}/> </Route>
+            </Switch>
 
             <footer class="page-footer">
                 <nav class="footer-nav">
@@ -166,7 +144,7 @@ const App = () => {
                 </nav>
                 <p class="copyright">&copy; Daisy, Crafted with <span class="material-icons">favorite</span> by Clara Khast | All rights reserved.</p>
             </footer>
-        </>
+        </Router>
     )
 }
 
