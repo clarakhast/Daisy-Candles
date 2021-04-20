@@ -1,25 +1,26 @@
 import React from "react"
+import {Link} from 'react-router-dom'
 import '../css/App.css'
 import '../css/reset.css'
 import cart from 'img/cart.png'
 
 
-const Product = ({name=0, image=0, brand=0, price=0}) => {
-    return <>
+const Product = ({data}) => {
+    return(
 
         <article class="product">
-            <img src={image} alt={name} class="product-img" />
+            <img src={data.image} alt={data.name} class="product-img" />
             <div class="product-info">
-                <h3>{name} <span class="material-icons">favorite_border</span></h3>
+                <h3><Link to={`/product/${data.slug}`}>{data.name} <span class="material-icons">favorite_border</span></Link></h3>
                 <div class="ratings">
                     <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span>
                 </div>
-                <p>{brand}</p>
-                <div class="product-footer"><data value="39"><ins>${price}</ins></data>
+                <p>{data.brand}</p>
+                <div class="product-footer"><data value="39"><ins>${data.price}</ins></data>
                     <a href="#" class="cart"><img src={cart} alt="shopping cart" /></a></div>
             </div>
         </article>
-    </>
+    )
 }
 
 export default Product

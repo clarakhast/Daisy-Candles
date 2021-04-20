@@ -6,68 +6,75 @@ import AboutUs from 'components/AboutUs'
 import Contact from 'components/Contact'
 import HomePage from 'components/HomePage'
 import ShopProducts from 'components/ShopProducts'
+import ProductPage from 'components/ProductPage'
 
 
 const App = () => {
     const allProducts = [
         {
             id: 101,
+            slug: `raspberry-candle`,
             name: `Rasberry Candle`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/raspberyy-candle.png',
+            image: '../src/img/raspberyy-candle.png',
             rate: 5
         },
         {
             id: 102,
+            slug: `ocean-breeze`,
             name: `Ocean Breeze`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/ocean-breeze.png',
+            image: '../src/img/ocean-breeze.png',
             rate: 5
         },
         {
             id: 103,
+            slug: `no1`,
             name: `No. 1`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/no1.png',
+            image: '../src/img/no1.png',
             rate: 5
         },
         {
             id: 104,
+            slug: `nudesse-candle`,
             name: `Nudesse Candle`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/nudesse.png',
+            image: '../src/img/nudesse.png',
             rate: 5
         },
         {
             id: 105,
+            slug: `firewood-figs`,
             name: `Firewood Figs`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/firewood-figs.png',
+            image: '../src/img/firewood-figs.png',
             rate: 5
         },
         {
             id: 106,
+            slug: `pink-macaron`,
             name: `Pink Macaron`,
             price: 23.50,
             quantity: 5,
             brand: `Yummi Candles`,
             description: `Classic Rasberry scented candle with a hint of vanilla.`,
-            image: './src/img/pink-macaron.png',
+            image: '../src/img/pink-macaron.png',
             rate: 5
         }
 
@@ -102,6 +109,7 @@ const App = () => {
                 <Route path="/about" component={AboutUs} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/products"><ShopProducts products={allProducts}/> </Route>
+                <Route path="/product/:slug"><ProductPage products={allProducts}/> </Route>
             </Switch>
 
             <footer class="page-footer">

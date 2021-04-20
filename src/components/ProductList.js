@@ -5,7 +5,7 @@ import Product from 'components/Product'
 
 
 const ProductList = ({ products }) => {
-    const allProducts = products.map(({ name, image, brand, price }) => <Product name={name} image={image} brand={brand} price={price} />)
+    const allProducts = products.map((product) => <Product key={product.id} data={product}/>)
     return (
                 <div class="results">
                     {allProducts}
