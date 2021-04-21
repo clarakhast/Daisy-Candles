@@ -1,0 +1,61 @@
+/*********************************
+            HEADER
+**********************************/
+
+.error-intro{
+    background-image: url(../img/404.jpeg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:40rem;
+    margin-top:-5rem;
+    display:block;
+    text-align:center;
+    border-radius: 25em 0 0 0;
+}
+
+h1.error {
+    font-size: 5rem;
+    color: purple;
+    margin:2rem auto 1rem auto;
+}
+
+h1 span {
+    font-weight:400;
+    display:block;
+    font-size: 2rem;
+    color: black;
+}
+
+.error-intro p{
+    font-size: 1.5rem;
+    font-weight:200;
+    margin-top:0;
+}
+
+.error-btn {
+    background-color: pink;
+    padding:1rem;
+    margin:2em auto;
+    display:block;
+    width: 12rem;
+    text-align: center;
+    border-radius: 0px 30px 30px 30px;
+    font-weight:700;
+}
+
+.error-btn:hover {
+    background-color: purple;
+    color:white;
+    cursor: pointer;
+}
+
+/*********************************
+          MEDIA QUERIES
+**********************************/
+
+@media screen and (max-width: 55em){
+    .error-intro{
+        padding-left:2rem;
+    }
+}
