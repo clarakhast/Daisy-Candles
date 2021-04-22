@@ -11,7 +11,8 @@ const ShopProducts = () => {
     const [filters, setFilters] = useState({
         query: ``,
         rating: `all`,
-        sortBy: `rating`
+        sortBy: `rating`,
+        brand: `all`
 
     })
 
@@ -59,7 +60,7 @@ return (
 
             <ProductFilter filters={filters} setFilters={setFilters} />
             <ProductList products={productsResults} />
-            <div className="more"><a href="#" className="btn-more">Load More</a></div>
+            {/* <div className="more"><a href="#" className="btn-more">Load More</a></div> */}
         </section>
     </main>
 )

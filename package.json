@@ -29,6 +29,7 @@
     "@firebase/firestore": "^2.2.4",
     "antd": "^4.15.2",
     "firebase": "^8.4.1",
+    "netlify-cli": "^3.21.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
