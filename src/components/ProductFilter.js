@@ -1,6 +1,5 @@
 import React from 'react'
-import '../css/App.css'
-import '../css/reset.css'
+import 'css/reset.css'
 
 const ProductFilter = ({filters, setFilters}) => {
     return (
@@ -16,7 +15,8 @@ const ProductFilter = ({filters, setFilters}) => {
                     <option value="rating">Most Popular</option>
                     <option value="price-high">Price, highest to lowest</option>
                     <option value="price-low">Price, lowest to highest</option>
-                    <option value="none">Newest releases</option>
+                    {/* <option value="alphabet">Name (A-Z)</option>
+                    <option value="r-alphabet">Name (Z-A)</option> */}
                 </select>
             </div>
 

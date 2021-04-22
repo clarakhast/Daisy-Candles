@@ -1,5 +1,10 @@
 # Daisy Candles
 
+##  Introduction
+
+Daisy Candles is a single-page web app created using React. It is mostly focused on products page in which user is able to view all the products from firebase database. The products can be filtered as well. User is also able to naviagte to different pages in the app.
+
+
 ## Getting Started
 
 1. Install the project dependencies
@@ -31,7 +36,3 @@ npm run start
     - `/products/filter`
 - `/product/product-name`: `ProductPage`
 - `/about`: `AboutUs`
-
-<!--
-- Pages: Home, About Us, Contact, Products
-    - Products: categories? items? search results? -->

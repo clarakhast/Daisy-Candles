@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import ProductContext from 'contexts/product'
 import firebase from 'util/firebase'
-import 'css/App.css'
 import 'css/reset.css'
 import AboutUs from 'pages/AboutUs'
 import Contact from 'pages/Contact'
@@ -95,10 +94,10 @@ const App = () => {
                                 <p>Sign up for emails to receive newsletters plus exclusive offers and discounts.</p>
                                 <input type="email" name="email" id="email" placeholder="Enter your email" className="email" />
                             </li>
-                            <li className="social-icon"><a href="#"><img src="./src/img/facebook.png" alt="facebook icon" /></a></li>
-                            <li className="social-icon"><a href="#"><img src="./src/img/instagram.png" alt="instagram icon" /></a></li>
-                            <li className="social-icon"><a href="#"><img src="./src/img/pinterest.png" alt="pinterest icon" /></a></li>
-                            <li className="social-icon"><a href="#"><img src="./src/img/twitter.png" alt="twitter icon" /></a></li>
+                            <li className="social-icon"><a href="#"><img src="src/img/facebook.png" alt="facebook icon" /></a></li>
+                            <li className="social-icon"><a href="#"><img src="src/img/instagram.png" alt="instagram icon" /></a></li>
+                            <li className="social-icon"><a href="#"><img src="src/img/pinterest.png" alt="pinterest icon" /></a></li>
+                            <li className="social-icon"><a href="#"><img src="src/img/twitter.png" alt="twitter icon" /></a></li>
                         </ul>
                     </nav>
                     <p className="copyright">&copy; Daisy, Crafted with <span className="material-icons">favorite</span> by Clara Khast | All rights reserved.</p>

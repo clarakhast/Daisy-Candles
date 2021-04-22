@@ -1,7 +1,6 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
-import '../css/App.css'
-import Product from 'components/Product'
+// import Product from 'components/Product'
 
 const ProductPage = ({products}) => {
 
@@ -11,8 +10,13 @@ const ProductPage = ({products}) => {
 
     return (
         <main>
-            <h1>One Product</h1>
-            <Product data={prod}></Product>
+            <h1>{prod.name}</h1>
+            <img src={prod.image}/>
+            <p>{prod.description}</p>
+            <p>{prod.rate}</p>
+            <p>{prod.brand}</p>
+            <p>{prod.price}</p>
+            {/* <Product data={prod}></Product> */}
         </main>
     )
 }

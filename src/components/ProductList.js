@@ -1,6 +1,5 @@
 import React from "react";
-import '../css/App.css'
-import '../css/reset.css'
+import 'css/reset.css'
 import Product from 'components/Product'
 // import {Pagination} from 'antd'
 // import 'antd/dist/antd.css'
