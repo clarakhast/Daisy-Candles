@@ -30,7 +30,8 @@ h1 span {
 **********************************/
 
 @media screen and (max-width: 55em){
-    .home-intro{
+    .contact-intro{
         padding-left:2rem;
+        border-radius:0
     }
 }
