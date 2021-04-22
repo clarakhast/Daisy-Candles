@@ -9,6 +9,7 @@ import HomePage from 'pages/HomePage'
 import ShopProducts from 'pages/ShopProducts'
 import ProductPage from 'pages/ProductPage'
 import Page404 from 'pages/Page404'
+import Navbar from './Nav/Navbar';
 
 function getProducts() {
     const [allProducts, setProducts] = useState([])
@@ -31,26 +32,9 @@ const App = () => {
     return (
         <ProductContext.Provider value={allProducts}>
             <Router>
-                <header className="page-header">
-                    <Link to="/" className="logo">Daisy</Link>
-
-                    <button type="button" className="nav-toggle">
-                        <span className="material-icons">menu</span>
-                    </button>
-                    <nav aria-label="Primary" className="navigation">
-                        <ul className="menu">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/products">Products</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                    </nav>
-
-                    <ul className="your-products">
-                        <li><a href="#"><span className="material-icons">favorite_border</span></a></li>
-                        <li><a href="#"><span className="material-icons">shopping_cart</span></a></li>
-                        <li><a href="#" className="login">Login</a></li>
-                    </ul>
+            
+                 <header className="page-header">
+                 <Navbar />
                 </header>
 
                 <Switch>

@@ -1,7 +1,7 @@
 .product-container {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width:90%;
+    max-width:50rem;
     grid-gap: 1rem;
     margin: 2rem auto;
 }

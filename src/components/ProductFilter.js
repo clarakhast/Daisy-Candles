@@ -12,6 +12,7 @@ const ProductFilter = ({filters, setFilters}) => {
                         sortBy: event.target.value
                     })
                 }}>
+                    <option value="none" disabled>Sort By</option>
                     <option value="rating">Most Popular</option>
                     <option value="price-high">Price, highest to lowest</option>
                     <option value="price-low">Price, lowest to highest</option>

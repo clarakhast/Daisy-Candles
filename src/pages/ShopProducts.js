@@ -10,9 +10,7 @@ const ShopProducts = () => {
 
     const [filters, setFilters] = useState({
         query: ``,
-        rating: `all`,
-        sortBy: `rating`,
-        maxPrice: 0
+        sortBy: `none`
 
     })
 
@@ -22,14 +20,8 @@ const ShopProducts = () => {
         let filteredProducts = [...products]
 
         // Check all the filters
-        if (filters.rating !== `all`)
-            filteredProducts = filteredProducts.filter((prod) => Number(prod.rating) >= Number(filters.rating))
-
         if (filters.query)
             filteredProducts = filteredProducts.filter((prod) => prod.name.toLowerCase().includes(filters.query.toLowerCase().trim()))
-
-        if (filters.maxPrice > 0)
-            filteredProducts = filteredProducts.filter((prod) => Number(prod.price) <= Number(filters.maxPrice))
 
         // Sort if appropriate
         switch (filters.sortBy) {
