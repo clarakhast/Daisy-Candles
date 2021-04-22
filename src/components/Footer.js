@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import img from '../img/footer-bg.png'
 import msg from '../img/message.png'
+import insta from '../img/instagram.png'
+import fb from '../img/facebook.png'
+import twitter from '../img/twitter.png'
+import pinterest from '../img/pinterest.png'
 
 const Foot = styled.footer`
 nav {
@@ -122,10 +126,10 @@ const Footer = () => {
                         <p>Sign up for emails to receive newsletters plus exclusive offers and discounts.</p>
                         <input type="email" name="email" id="email" placeholder="Enter your email" className="email" />
                     </li>
-                    <li className="social-icon"><a href="#"><img src="src/img/facebook.png" alt="facebook icon" /></a></li>
-                    <li className="social-icon"><a href="#"><img src="src/img/instagram.png" alt="instagram icon" /></a></li>
-                    <li className="social-icon"><a href="#"><img src="src/img/pinterest.png" alt="pinterest icon" /></a></li>
-                    <li className="social-icon"><a href="#"><img src="src/img/twitter.png" alt="twitter icon" /></a></li>
+                    <li className="social-icon"><a href="#"><img src={fb} alt="facebook icon" /></a></li>
+                    <li className="social-icon"><a href="#"><img src={insta} alt="instagram icon" /></a></li>
+                    <li className="social-icon"><a href="#"><img src={pinterest} alt="pinterest icon" /></a></li>
+                    <li className="social-icon"><a href="#"><img src={twitter} alt="twitter icon" /></a></li>
                 </ul>
             </nav>
             <p className="copyright">&copy; Daisy, Crafted with <span className="material-icons">favorite</span> by Clara Khast | All rights reserved.</p>
