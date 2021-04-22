@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import 'css/reset.css'
 
 
@@ -14,7 +14,11 @@ const Ul = styled.ul`
 
   li a:hover {
     color:var(--orange-color);
-    // border-bottom: 2px solid var(--orange-color);
+  }
+
+  .active {
+    color:var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
   }
   .login {
     background-color: var(--orange-color);
@@ -57,6 +61,11 @@ const Ul = styled.ul`
     .login:hover {
         background-color: white;
     }
+
+    .active{
+        color:black;
+        border-bottom:none;
+    }
   }
 `;
 
@@ -64,10 +73,10 @@ const RightNav = ({ open }) => {
     return (
             
         <Ul open={open}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+            <li><NavLink exact to="/products" activeClassName="active">Products</NavLink></li>
+            <li><NavLink exact to="/about" activeClassName="active">About</NavLink></li>
+            <li><NavLink exact to="/contact" activeClassName="active">Contact</NavLink></li>
             <li><a href="#"><span className="material-icons">favorite_border</span></a></li>
             <li><a href="#"><span className="material-icons">shopping_cart</span></a></li>
             <li><a href="#" className="login">Login</a></li>
