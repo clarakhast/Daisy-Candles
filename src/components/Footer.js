@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import img from '../img/footer-bg.png'
+import msg from '../img/message.png'
 
 const Foot = styled.footer`
 nav {
@@ -16,7 +17,7 @@ nav {
     height:30rem;
     padding: 5rem 2rem;
     margin-top:3rem;
-}
+} 
 
 nav ul li {
     padding:0.8rem 0.5rem;
@@ -52,7 +53,7 @@ nav ul li a:hover {
     width:75%;
     border: 1px solid #F6F6F6;
     border-radius:20px;
-    background-image: url(../img/message.png);
+    background-image: url(${msg});
     background-repeat: no-repeat;
     background-position: center right 3%;
     background-size: 28px;

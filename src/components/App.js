@@ -33,9 +33,9 @@ const App = () => {
     return (
         <ProductContext.Provider value={allProducts}>
             <Router>
-            
-                 <header className="page-header">
-                 <Navbar />
+
+                <header className="page-header">
+                    <Navbar />
                 </header>
 
                 <Switch>
@@ -47,7 +47,7 @@ const App = () => {
                     <Route path="*" component={Page404} />
                 </Switch>
 
-                <Footer/>
+                <Footer />
             </Router>
         </ProductContext.Provider>
 
