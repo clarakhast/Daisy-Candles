@@ -1,4 +1,15 @@
-# Daisy Candles
+# Daisy Candles 
+
+## Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3496e57b-d045-4c2e-94d0-76557c496e99/deploy-status)](https://app.netlify.com/sites/daisy-candles/deploys)
+
+### Lighthouse
+![Lighthouse Accessibility](assets/lighthouse_accessibility.svg)
+![Lighthouse Best Practices](assets/lighthouse_best-practices.svg)
+![Lighthouse Performance](assets/lighthouse_performance.svg)
+![Lighthouse SEO](assets/lighthouse_seo.svg)
+
+![Lighthouse Scores](assets/lighthouse.png)
 
 ##  Introduction
 
@@ -36,3 +47,7 @@ npm run start
     - `/products/filter`
 - `/product/product-name`: `ProductPage`
 - `/about`: `AboutUs`
+
+## Live Website
+
+https://daisy-candles.netlify.app/products

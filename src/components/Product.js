@@ -12,7 +12,7 @@ const Product = ({data}) => {
             <div className="product-info">
                 <h3><Link to={`/product/${data.slug}`}>{data.name} <span className="material-icons">favorite_border</span></Link></h3>
                 <div className="ratings">
-                    <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_half</span>
+                    <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_half</span>{data.rate}/5
                 </div>
                 <p>{data.brand}</p>
                 <div className="product-footer"><data value="39"><ins>${data.price}</ins></data>

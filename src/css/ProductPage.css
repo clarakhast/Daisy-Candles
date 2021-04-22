@@ -1,7 +1,8 @@
 .product-container {
-    display:flex;
-    justify-content: space-around;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     width:90%;
+    grid-gap: 1rem;
     margin: 2rem auto;
 }
 
@@ -9,6 +10,8 @@
     border-radius: 1rem;
     width:100%;
     object-fit: cover;
+    max-height:400px;
+    max-width:400px;
 }
 
 .product-info h1{
@@ -44,6 +47,12 @@
         display:block;
         margin: 1rem auto;
         width:100%;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        max-height: auto;  
+
     }
 
 }
