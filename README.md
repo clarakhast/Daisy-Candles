@@ -9,7 +9,7 @@
 ![Lighthouse Performance](badges/lighthouse_performance.svg)
 ![Lighthouse SEO](badges/lighthouse_seo.svg)
 
-<!-- ![Lighthouse Scores](badges/lighthouse.png) -->
+![Lighthouse Scores](badges/lighthouse.png)
 
 ##  Introduction
 
