@@ -4,12 +4,12 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3496e57b-d045-4c2e-94d0-76557c496e99/deploy-status)](https://app.netlify.com/sites/daisy-candles/deploys)
 
 ### Lighthouse
-![Lighthouse Accessibility](assets/lighthouse_accessibility.svg)
-![Lighthouse Best Practices](assets/lighthouse_best-practices.svg)
-![Lighthouse Performance](assets/lighthouse_performance.svg)
-![Lighthouse SEO](assets/lighthouse_seo.svg)
+![Lighthouse Accessibility](badges/lighthouse_accessibility.svg)
+![Lighthouse Best Practices](badges/lighthouse_best-practices.svg)
+![Lighthouse Performance](badges/lighthouse_performance.svg)
+![Lighthouse SEO](badges/lighthouse_seo.svg)
 
-![Lighthouse Scores](assets/lighthouse.png)
+![Lighthouse Scores](badges/lighthouse.png)
 
 ##  Introduction
 
@@ -50,4 +50,4 @@ npm run start
 
 ## Live Website
 
-https://daisy-candles.netlify.app/products
+https://daisy-candles.netlify.app
