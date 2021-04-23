@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import 'css/reset.css'
 import Product from 'components/Product'
-// import {Pagination} from 'antd'
-// import 'antd/dist/antd.css'
+import { PRODUCT_PER_PAGE } from 'util/constants'
 
+const ProductList = ({ products, page }) => {
 
-const ProductList = ({ products }) => {
-    const allProducts = products.map((product) => <Product key={product.id} data={product}/>)
-    // const [pageWereOn, setPageWereoN]= useState(1)
+    const startIndex = (page - 1) * PRODUCT_PER_PAGE
+    const selectedProducts = products.slice(startIndex, startIndex + PRODUCT_PER_PAGE)
+    const allProducts = selectedProducts.map((product) =><Product product={product} key={product.id} />
+    )
 
     return (
-                <div className="results">
-                    {allProducts}
-                    {/* <Pagination defaultCurrent={1} total={16} defaultPageSize={6}/> */}
-                </div>
-                
+
+
+        <div className="results">
+            {allProducts}
+        </div>
+
     )
 
 }

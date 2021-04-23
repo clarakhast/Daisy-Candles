@@ -2,11 +2,17 @@ import React, { useContext, useEffect, useState } from 'react'
 import ProductContext from 'contexts/product'
 import ProductList from 'components/ProductList'
 import ProductFilter from 'components/ProductFilter'
+import Pagination from 'components/Pagination'
+import { PRODUCT_PER_PAGE } from 'util/constants'
 
 const ShopProducts = () => {
 
     const products = useContext(ProductContext)
     const [productsResults, setProductsResults] = useState(products)
+    const [page, setPage] = useState(1)
+    const [totalPages, setTotalPages] = useState(0)
+
+    console.log(totalPages)
 
     const [filters, setFilters] = useState({
         query: ``,
@@ -15,6 +21,8 @@ const ShopProducts = () => {
     })
 
     useEffect(() => {
+
+        setTotalPages(Math.ceil(products.length / PRODUCT_PER_PAGE))
 
         // Creat a clone Array
         let filteredProducts = [...products]
@@ -47,6 +55,10 @@ const ShopProducts = () => {
 
     }, [filters])
 
+    const handleClick = num => {
+        setPage(num);
+    }
+
     return (
         <main>
             <header className="heading">
@@ -60,8 +72,12 @@ const ShopProducts = () => {
                 <h2>Our Products</h2>
 
                 <ProductFilter filters={filters} setFilters={setFilters} />
-                <ProductList products={productsResults} />
-                {/* <div className="more"><a href="#" className="btn-more">Load More</a></div> */}
+                <ProductList products={productsResults} page={page} />
+                <div className="pagination-container">
+                    <Pagination totalPages={totalPages} handleClick={handleClick} />
+                </div>
+
+
             </section>
         </main>
     )

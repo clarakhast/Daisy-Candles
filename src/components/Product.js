@@ -4,18 +4,18 @@ import 'css/reset.css'
 import cart from 'img/cart.png'
 
 
-const Product = ({data}) => {
-    return(
+const Product = ({product}) => {
 
+    return(
         <article className="product">
-            <img src={data.image} alt={data.name} className="product-img" />
+            <img src={product.image} alt={product.name} className="product-img" />
             <div className="product-info">
-                <h3><Link to={`/product/${data.slug}`}>{data.name} <span className="material-icons">favorite_border</span></Link></h3>
+                <h3><Link to={`/product/${product.slug}`}>{product.name} <span className="material-icons">favorite_border</span></Link></h3>
                 <div className="ratings">
-                    <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_half</span>{data.rate}/5
+                    <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_half</span>{product.rate}/5
                 </div>
-                <p>{data.brand}</p>
-                <div className="product-footer"><data value="39"><ins>${data.price}</ins></data>
+                <p>{product.brand}</p>
+                <div className="product-footer"><data value="39"><ins>${product.price}</ins></data>
                     <a href="#" className="cart"><img src={cart} alt="shopping cart" /></a></div>
             </div>
         </article>
