@@ -12,8 +12,6 @@ const ShopProducts = () => {
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(0)
 
-    console.log(totalPages)
-
     const [filters, setFilters] = useState({
         query: ``,
         sortBy: `none`
